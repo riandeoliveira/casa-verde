@@ -8,5 +8,7 @@ export interface ColorPallete {
 }
 
 export interface TextFonts {
+  primary: string;
+  secondary: string;
   default: string;
 }

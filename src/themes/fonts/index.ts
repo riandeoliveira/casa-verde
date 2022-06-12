@@ -1,8 +1,9 @@
 import { TextFonts } from "../../interfaces";
 
 const fonts: TextFonts = {
-  // Your application text fonts
+  primary: "Elsie Swash Caps",
+  secondary: "Montserrat",
   default: "sans-serif",
-}
+};
 
 export default fonts;
