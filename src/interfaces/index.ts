@@ -7,6 +7,10 @@ export interface ColorPallete {
   tertiary: string;
 }
 
+export interface PlantCardBoxProps {
+  bgImage: string;
+}
+
 export interface PlantCardProps {
   image: string;
   key: number;
