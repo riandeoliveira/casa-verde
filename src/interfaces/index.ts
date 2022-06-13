@@ -1,14 +1,21 @@
 export interface ColorPallete {
-  primary: string;
+  neutral_light: string;
+  neutral: string;
   primary_light: string;
+  primary: string;
   secondary: string;
   tertiary: string;
-  neutral: string;
-  neutral_light: string;
+}
+
+export interface PlantCardProps {
+  image: string;
+  key: number;
+  name: string;
+  price: number;
 }
 
 export interface TextFonts {
+  default: string;
   primary: string;
   secondary: string;
-  default: string;
 }
