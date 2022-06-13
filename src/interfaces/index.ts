@@ -23,3 +23,8 @@ export interface TextFonts {
   primary: string;
   secondary: string;
 }
+
+export interface TitleAreaProps {
+  subtitle: string;
+  title: string;
+}
