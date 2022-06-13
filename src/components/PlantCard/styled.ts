@@ -5,12 +5,11 @@ import fonts from "../../themes/fonts";
 
 export const PlantCardBox = styled.div<PlantCardBoxProps>`
   background-color: ${colors.neutral_light};
-  background-image: url(${(props) => props.bgImage});
+  background-image: url(${({ bgImage }) => bgImage});
   background-repeat: no-repeat;
   width: 380px;
   height: 200px;
   display: flex;
-  margin: 50px;
   flex-direction: column;
   align-items: end;
   background-position-x: -15%;
