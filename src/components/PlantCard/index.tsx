@@ -1,5 +1,5 @@
 import { PlantCardProps } from "../../interfaces";
-import * as S from "./styles";
+import * as S from "./styled";
 import { arrow_right } from "../../assets";
 
 export const PlantCard = (props: PlantCardProps): JSX.Element => {

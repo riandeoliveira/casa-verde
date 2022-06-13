@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from "./styled";
 import { logo } from "../../assets";
 
 export const Header = (): JSX.Element => {
