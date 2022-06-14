@@ -16,7 +16,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-attachment: fixed;
     background-color: ${colors.neutral};
     background-image: url(${bg_top});
     background-position: top right;
