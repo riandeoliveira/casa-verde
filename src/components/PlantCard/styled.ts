@@ -12,7 +12,8 @@ export const PlantCardBox = styled.div<PlantCardBoxProps>`
   display: flex;
   flex-direction: column;
   align-items: end;
-  background-position-x: -15%;
+  background-position: -15% 30%;
+  background-size: 67%;
 
   & > div {
     width: 160px;
