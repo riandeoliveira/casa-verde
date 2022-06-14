@@ -1,11 +1,14 @@
-import { ColorPallete } from "../../interfaces";
+interface ColorPallete {
+  neutral_light: string;
+  neutral: string;
+  primary: string;
+  secondary: string;
+}
 
 const colors: ColorPallete = {
   primary: "#202020",
-  primary_light: "#909090",
   secondary: "#ffcb47",
-  tertiary: "#6d9070",
-  neutral: "#fafafa",
+  neutral: "#f0f0f0",
   neutral_light: "#ffffff",
 };
 

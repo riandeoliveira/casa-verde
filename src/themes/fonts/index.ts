@@ -1,4 +1,8 @@
-import { TextFonts } from "../../interfaces";
+interface TextFonts {
+  default: string;
+  primary: string;
+  secondary: string;
+}
 
 const fonts: TextFonts = {
   primary: "Elsie Swash Caps",
