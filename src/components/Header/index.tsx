@@ -1,23 +1,35 @@
-import * as S from "./styled";
+import * as S from "./styles";
 import { logo } from "../../assets";
 
 export const Header = (): JSX.Element => {
   return (
     <S.Header>
-      <img src={logo} alt="Website logo" />
-      <nav>
-        <ul>
-          <li>Como fazer</li>
-          <li>/</li>
-          <li>Ofertas</li>
-          <li>/</li>
-          <li>Depoimentos</li>
-          <li>/</li>
-          <li>Vídeos</li>
-          <li>/</li>
-          <li>Meu carrinho</li>
-        </ul>
-      </nav>
+      <S.Container>
+        <img src={logo} alt="Website logo" />
+        <nav>
+          <S.List>
+            <li>
+              <S.Link href="/">Como fazer</S.Link>
+            </li>
+            <li>/</li>
+            <li>
+              <S.Link href="/">Ofertas</S.Link>
+            </li>
+            <li>/</li>
+            <li>
+              <S.Link href="/">Depoimentos</S.Link>
+            </li>
+            <li>/</li>
+            <li>
+              <S.Link href="/">Vídeos</S.Link>
+            </li>
+            <li>/</li>
+            <li>
+              <S.Link href="/">Meu carrinho</S.Link>
+            </li>
+          </S.List>
+        </nav>
+      </S.Container>
     </S.Header>
   );
 };
