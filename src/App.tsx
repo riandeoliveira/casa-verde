@@ -1,15 +1,13 @@
 import { Header } from "./components/Header";
-import { MyPlant } from "./components/MyPlant";
-import { Offers } from "./components/Offers";
+import { MyPlantSection } from "./components/MyPlantSection";
+import { OffersSection } from "./components/OffersSection";
 
-export const App = (): JSX.Element => {
-  return (
-    <>
-      <Header />
-      <main>
-        <MyPlant />
-        <Offers />
-      </main>
-    </>
-  );
-};
+export const App = (): JSX.Element => (
+  <>
+    <Header />
+    <main>
+      <MyPlantSection />
+      <OffersSection />
+    </main>
+  </>
+);
