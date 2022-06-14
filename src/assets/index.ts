@@ -16,8 +16,8 @@ const plantImages: string[] = [
   cordyline_fruticosa,
   crassula_ovata,
   cyperus_rotundus,
-  datura_metel,
   delairea_odorata,
+  datura_metel,
 ];
 
 export { arrow_right, bg_top, ellipse, logo, plantImages, my_plant };
