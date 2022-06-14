@@ -16,6 +16,7 @@ export const Section = styled.section`
 export const TitleContainer = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  gap: 12px;
 
   h1 {
     font-family: ${fonts.primary};
