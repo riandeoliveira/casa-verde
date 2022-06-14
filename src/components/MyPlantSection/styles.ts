@@ -32,6 +32,7 @@ export const Section = styled.section`
 
         h1 {
           font-family: ${fonts.primary};
+          color: ${colors.primary};
           font-size: 42px;
         }
 

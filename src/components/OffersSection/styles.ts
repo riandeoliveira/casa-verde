@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import colors from "../../themes/colors";
 import fonts from "../../themes/fonts";
 
 export const Section = styled.section`
   display: flex;
   justify-content: center;
+  margin-top: 44px;
 
   & > div {
     display: flex;
@@ -20,6 +22,7 @@ export const TitleContainer = styled.div`
 
   h1 {
     font-family: ${fonts.primary};
+    color: ${colors.primary};
     font-size: 82px;
     text-align: center;
   }

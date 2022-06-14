@@ -33,6 +33,7 @@ export const Card = styled.div<CardProps>`
 
       h3 {
         font-family: ${fonts.primary};
+        color: ${colors.primary};
         font-size: 32px;
       }
 
