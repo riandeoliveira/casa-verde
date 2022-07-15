@@ -1,10 +1,10 @@
 <div align="center">
-  <h1>7 Days of Code</h1>
+  <h1>7 Days Of Code</h1>
 </div>
 
 ## 📚 Sobre
 
-<!-- Faça uma descrição do seu projeto aqui -->
+<!-- Uma breve descrição do seu projeto -->
 
 ### 🕹️ Possui as seguintes funcionalidades:
 
@@ -32,7 +32,7 @@
 
 ## 🛠️ Tecnologias utilizadas
 
-<h3 align="center">🖥️ Front-End</h3>
+<br>
 
 <table align="center">
   <tbody>
@@ -67,28 +67,6 @@
         <br>
         <span>JavaScript</span>
       </td>
-    </tr>
-    <tr>
-      <td align="center" height="110" width="140">
-        <img
-          alt="Vite logo"
-          src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png"
-          title="Vite"
-          width="50"
-        />
-        <br>
-        <span>Vite</span>
-      </td>
-      <td align="center" height="110" width="140">
-        <img
-          alt="Styled Components logo"
-          src="https://avatars.githubusercontent.com/u/20658825?s=200&v=4"
-          title="Styled Components"
-          width="50"
-        />
-        <br>
-        <span>Styled Components</span>
-      </td>
       <td align="center" height="110" width="140">
         <img
           alt="React logo"
@@ -99,26 +77,122 @@
         <br>
         <span>React</span>
       </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Next.js logo"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
+          title="Next.js"
+          width="50"
+        />
+        <br>
+        <span>Next.js</span>
+      </td>
     </tr>
     <tr>
-      <td></td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Axios logo"
+          src="https://avatars.githubusercontent.com/u/32372333?v=4&s=400"
+          title="Axios"
+          width="50"
+        />
+        <br>
+        <span>Axios</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="SASS logo"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+          title="SASS"
+          width="50"
+        />
+        <br>
+        <span>SASS</span>
+      </td>
       <td align="center" height="110" width="140">
         <img
           alt="TypeScript logo"
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-          title="TypeScript"
+          title="HTML5"
           width="50"
         />
         <br>
         <span>TypeScript</span>
       </td>
-      <td></td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Node.js logo"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+          title="Node.js"
+          width="50"
+        />
+        <br>
+        <span>Node.js</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="MongoDB logo"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+          title="MongoDB"
+          width="50" />
+        <br>
+        <span>MongoDB</span>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" height="110" width="140">
+        <img
+          alt="ESLint logo"
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/eslint/eslint-original.svg"
+          title="ESLint"
+          width="50"
+        />
+        <br>
+        <span>ESLint</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Stylelint logo"
+          src="https://seeklogo.com/images/S/stylelint-logo-631B4EAA36-seeklogo.com.png"
+          title="Stylelint"
+          width="50"
+        />
+        <br>
+        <span>Stylelint</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Prettier logo"
+          src="https://brandslogos.com/wp-content/uploads/images/prettier-logo.png"
+          title="Prettier"
+          width="50"
+        />
+        <br>
+        <span>Prettier</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="React Icons logo"
+          src="https://avatars.githubusercontent.com/u/39895671?s=280&v=4"
+          title="React Icons"
+          width="50"
+        />
+        <br>
+        <span>React Icons</span>
+      </td>
+      <td align="center" height="110" width="140">
+        <img
+          alt="Prisma logo"
+          src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_light_prisma_icon_130444.png"
+          title="Prisma"
+          width="50" />
+        <br>
+        <span>Prisma</span>
+      </td>
     </tr>
   </tbody>
 </table>
 
-## 🚀 Desenvolvido em
-
-<!-- Data de desenvolvimento -->
+<br>
 
 <p align="center">✨ Made with 💙 by <a href="https://github.com/riandeoliveira"><strong>Rian Oliveira</strong></a> ✨</p>
