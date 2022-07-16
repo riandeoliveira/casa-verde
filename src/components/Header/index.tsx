@@ -1,33 +1,51 @@
-import * as S from "./styles";
-import { logo } from "../../assets";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./styles.module.scss";
 
-export const Header = (): JSX.Element => (
-  <S.Header>
-    <div>
-      <img src={logo} alt="Website logo" />
+const Header = (): JSX.Element => (
+  <header className={styles.header}>
+    <div className={styles.container}>
+      <Image
+        src="/assets/icons/website_logo.svg"
+        alt="Ícone de uma folha de árvore do lado esquerdo do título 'Casa Verde'"
+        width={180}
+        height={45}
+      />
       <nav>
-        <ul>
+        <ul className={styles.list}>
           <li>
-            <a href="/">Como fazer</a>
+            <Link href="/como-fazer">
+              <a className={styles.link}>Como fazer</a>
+            </Link>
           </li>
           <li>/</li>
           <li>
-            <a href="/">Ofertas</a>
+            <Link href="/ofertas">
+              <a className={styles.link}>Ofertas</a>
+            </Link>
           </li>
           <li>/</li>
           <li>
-            <a href="/">Depoimentos</a>
+            <Link href="/depoimentos">
+              <a className={styles.link}>Depoimentos</a>
+            </Link>
           </li>
           <li>/</li>
           <li>
-            <a href="/">Vídeos</a>
+            <Link href="/videos">
+              <a className={styles.link}>Vídeos</a>
+            </Link>
           </li>
           <li>/</li>
           <li>
-            <a href="/">Meu carrinho</a>
+            <Link href="/meu-carrinho">
+              <a className={styles.link}>Meu carrinho</a>
+            </Link>
           </li>
         </ul>
       </nav>
     </div>
-  </S.Header>
+  </header>
 );
+
+export default Header;
