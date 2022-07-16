@@ -6,7 +6,7 @@ const Header = (): JSX.Element => (
   <header className={styles.header}>
     <div className={styles.container}>
       <Image
-        src="/assets/icons/website_logo.svg"
+        src="/assets/icons/logo.svg"
         alt="Ícone de uma folha de árvore do lado esquerdo do título 'Casa Verde'"
         width={180}
         height={45}
