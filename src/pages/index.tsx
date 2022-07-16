@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import Login from "./login";
+import Home from "./_home";
 
-const Index: NextPage = (): JSX.Element => <Login />;
+const Index: NextPage = (): JSX.Element => <Home />;
 
 export default Index;
