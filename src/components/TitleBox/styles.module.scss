@@ -1,0 +1,21 @@
+@use "../../styles/animations.scss" as *;
+@use "../../styles/media-queries.scss" as *;
+@use "../../styles/theme.scss" as *;
+@use "../../styles/utils.scss" as *;
+
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.title {
+  color: $secondary-darker;
+  font-family: $secondary-font;
+  font-size: 82px;
+}
+
+.subtitle {
+  color: $secondary-dark;
+  font-size: 22px;
+}
