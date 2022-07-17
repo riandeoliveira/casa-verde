@@ -1,4 +1,4 @@
-import navLinks from "content/nav_links";
+import { navLinks } from "content";
 import Link from "next/link";
 import styles from "./styles.module.scss";
 
