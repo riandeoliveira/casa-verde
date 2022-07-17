@@ -1,5 +1,4 @@
-import DesktopNavbar from "components/DesktopNavbar";
-import MobileNavbar from "components/MobileNavbar";
+import { DesktopNavbar, MobileNavbar } from "components";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 

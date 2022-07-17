@@ -1,7 +1,4 @@
-@use "../../styles/animations.scss" as *;
-@use "../../styles/media-queries.scss" as *;
-@use "../../styles/theme.scss" as *;
-@use "../../styles/utils.scss" as *;
+@use "../../styles" as *;
 
 .header {
   display: flex;
@@ -15,31 +12,4 @@
   display: flex;
   justify-content: space-between;
   width: 75rem;
-}
-
-.list {
-  display: flex;
-  font-weight: 600;
-  gap: 1rem;
-}
-
-.link {
-  border-radius: 0.25rem;
-  color: $secondary-darker-color;
-  padding: 0.1rem;
-  transition: box-shadow 0.15s, color 0.15s;
-
-  &:focus-visible {
-    box-shadow: 0 0 0 0.25rem $secondary-dark-color;
-  }
-
-  &:hover {
-    color: $secondary-dark-color;
-  }
-}
-
-@include media-query($laptop) {
-  .list {
-    display: none;
-  }
 }
