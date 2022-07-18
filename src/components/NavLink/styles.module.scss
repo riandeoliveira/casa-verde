@@ -1,0 +1,29 @@
+@use "../../styles" as *;
+
+.item {
+  display: flex;
+}
+
+.separator::after {
+  content: "/";
+}
+
+.link {
+  @include accessibility(get-color(neutral, normal));
+
+  color: get-color(neutral, dark);
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+@include laptop {
+  .separator::after {
+    content: "";
+  }
+
+  .link {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+  }
+}
