@@ -1,4 +1,3 @@
-import { TitleBox } from "components";
 import Image from "next/image";
 import styles from "./styles.module.scss";
 
@@ -7,7 +6,10 @@ export const BestPlantsSection = (): JSX.Element => {
     <section className={styles.section}>
       <div className={styles.section_container}>
         <div className={styles.container}>
-          <TitleBox subtitle="Sua casa com as" title="melhores plantas" />
+          <div className={styles.title_container}>
+            <h1 className={styles.title}>Sua casa com as</h1>
+            <h2 className={styles.subtitle}>melhores plantas</h2>
+          </div>
           <p className={styles.description}>
             Encontre aqui uma vasta seleção de plantas para decorar a sua casa e
             torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu
@@ -37,7 +39,7 @@ export const BestPlantsSection = (): JSX.Element => {
         </div>
         <div className={styles.image}>
           <Image
-            src="/assets/images/abc.svg"
+            src="/assets/images/best_plant.png"
             alt="Imagem uma planta em um vaso"
             width={580}
             height={890}

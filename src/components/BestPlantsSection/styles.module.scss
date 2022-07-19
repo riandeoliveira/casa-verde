@@ -1,7 +1,4 @@
-@use "../../styles/animations.scss" as *;
-@use "../../styles/media-queries.scss" as *;
-@use "../../styles/theme.scss" as *;
-@use "../../styles/utils.scss" as *;
+@use "../../styles" as *;
 
 .section {
   display: flex;
@@ -22,19 +19,21 @@
   max-width: 36.563rem;
 }
 
+@include title-box;
+
 .description {
-  color: $secondary-dark-color;
+  color: get-color(neutral, normal);
   line-height: 26px;
   margin-right: 5.625rem;
 }
 
 .form {
-  background-color: #d4c5c5;
   display: flex;
   height: 4.688rem;
 }
 
 .input_container {
+  background-color: get-color(neutral, lighter);
   display: flex;
   flex: 2;
 }
@@ -45,16 +44,19 @@
 }
 
 .input {
-  font-size: 16px;
-  opacity: 50%;
-  padding: 30px 30px 30px 0;
+  color: get-color(neutral, normal);
+  font-size: 1rem;
+  padding: 1.875rem;
+  padding-left: 0;
   width: 100%;
 }
 
 .button {
-  background-color: $primary-color;
+  background-color: get-color(primary, normal);
+  color: get-color(neutral, lighter);
   cursor: pointer;
   flex: 1;
+  font-size: 1rem;
 }
 
 .image {
