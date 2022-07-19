@@ -1,6 +1,41 @@
-import type { NextPage } from "next";
-import Home from "./_home";
+import type { Plant } from "@prisma/client";
+import {
+  BestPlantsSection,
+  HeadArea,
+  Header,
+  Main,
+  MyPlantSection,
+  OffersSection,
+} from "components";
+import prisma from "libs/prisma";
+import type { GetStaticProps, NextPage } from "next";
 
-const Index: NextPage = (): JSX.Element => <Home />;
+interface HomeProps {
+  plants: Plant[];
+}
 
-export default Index;
+const Home: NextPage<HomeProps> = ({ plants }): JSX.Element => {
+  return (
+    <>
+      <HeadArea />
+      <Header />
+      <Main>
+        <BestPlantsSection />
+        <MyPlantSection />
+        <OffersSection plantsData={plants} />
+      </Main>
+    </>
+  );
+};
+
+export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  const plants: Plant[] = await prisma.plant.findMany();
+
+  return {
+    props: {
+      plants,
+    },
+  };
+};
