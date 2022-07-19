@@ -1,31 +1,52 @@
-import { my_plant } from "../../assets";
-import * as S from "./styles";
-import { ellipse } from "../../assets";
+import Image from "next/image";
+import styles from "./styles.module.scss";
 
-export const MyPlantSection = (): JSX.Element => (
-  <S.Section>
-    <div>
-      <img src={my_plant} alt="Large card plant" />
-      <div>
-        <div>
-          <h1>minha planta</h1>
-          <h2>Como conseguir</h2>
+const MyPlantSection = (): JSX.Element => (
+  <section className={styles.section}>
+    <div className={styles.section_container}>
+      <Image
+        src="/assets/images/my_plant.png"
+        alt="Cartão grande de planta"
+        width={585}
+        height={440}
+      />
+      <div className={styles.container}>
+        <div className={styles.title_container}>
+          <h1 className={styles.title}>Como conseguir</h1>
+          <h2 className={styles.subtitle}>minha planta</h2>
         </div>
-        <ul>
-          <li>
-            <img src={ellipse} alt="Yellow ellipse icon" />
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <Image
+              src="/assets/icons/ellipse.svg"
+              alt="Ícone amarelo de uma elipse"
+              width={52}
+              height={52}
+            />
             <span>Escolha suas plantas</span>
           </li>
-          <li>
-            <img src={ellipse} alt="Yellow ellipse icon" />
+          <li className={styles.item}>
+            <Image
+              src="/assets/icons/ellipse.svg"
+              alt="Ícone amarelo de uma elipse"
+              width={52}
+              height={52}
+            />
             <span>Faça seu pedido</span>
           </li>
-          <li>
-            <img src={ellipse} alt="Yellow ellipse icon" />
+          <li className={styles.item}>
+            <Image
+              src="/assets/icons/ellipse.svg"
+              alt="Ícone amarelo de uma elipse"
+              width={52}
+              height={52}
+            />
             <span>Aguarde na sua casa</span>
           </li>
         </ul>
       </div>
     </div>
-  </S.Section>
+  </section>
 );
+
+export default MyPlantSection;
