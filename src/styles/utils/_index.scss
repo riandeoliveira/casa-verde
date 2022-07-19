@@ -1,0 +1,64 @@
+@use "../colors" as *;
+@use "../breakpoints" as *;
+@use "../fonts" as *;
+
+@mixin accessibility($color) {
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s, color 0.15s;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 0.25rem $color;
+  }
+
+  &:hover {
+    color: $color;
+  }
+
+  @content;
+}
+
+@mixin title-box {
+  .title_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .title {
+    color: get-color(neutral, normal);
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    color: get-color(neutral, dark);
+    font-family: get-font(primary);
+    font-size: 5.125rem;
+  }
+
+  @content;
+}
+
+@function get-color($key, $value) {
+  $colors-map: map-get($colors, $key, $value);
+
+  @return $colors-map;
+}
+
+@function get-breakpoint($key) {
+  $breakpoints-map: map-get($breakpoints, $key);
+
+  @return $breakpoints-map;
+}
+
+@function get-font($key) {
+  $fonts-map: map-get($fonts, $key);
+
+  @return $fonts-map;
+}
+
+@function get-global-fonts() {
+  $global-fonts: get-font(neutral), get-font(default);
+
+  @return $global-fonts;
+}

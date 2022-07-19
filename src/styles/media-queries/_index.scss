@@ -1,0 +1,43 @@
+@use "../utils" as *;
+
+@mixin desktop {
+  @media only screen and (max-width: get-breakpoint(desktop)) {
+    @content;
+  }
+}
+
+@mixin laptop-l {
+  @media only screen and (max-width: get-breakpoint(laptop-l)) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: get-breakpoint(laptop)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: get-breakpoint(tablet)) {
+    @content;
+  }
+}
+
+@mixin mobile-l {
+  @media only screen and (max-width: get-breakpoint(mobile-l)) {
+    @content;
+  }
+}
+
+@mixin mobile-m {
+  @media only screen and (max-width: get-breakpoint(mobile-m)) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media only screen and (max-width: get-breakpoint(mobile-s)) {
+    @content;
+  }
+}
