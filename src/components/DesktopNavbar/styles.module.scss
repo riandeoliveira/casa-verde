@@ -3,13 +3,6 @@
 .list {
   display: flex;
   font-weight: 600;
-  gap: 1rem;
-}
-
-.link {
-  @include accessibility(get-color(neutral, normal));
-
-  color: get-color(neutral, dark);
 }
 
 @include laptop {
