@@ -45,6 +45,7 @@
 
 .input {
   @include accessibility(get-color(primary, normal));
+  box-shadow: 10px 10px 30px #0000000f;
 
   color: get-color(neutral, normal);
   font-size: 1rem;
@@ -61,6 +62,7 @@
   @include accessibility(get-color(neutral, normal));
 
   background-color: get-color(primary, normal);
+  box-shadow: 10px 10px 30px #ffd34d6c;
   color: get-color(neutral, lighter);
   cursor: pointer;
   flex: 1;
