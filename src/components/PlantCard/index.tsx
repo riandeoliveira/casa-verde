@@ -1,28 +1,29 @@
-import * as S from "./styles";
-import { arrow_right } from "../../assets";
+import type { Plant } from "@prisma/client";
+import type { IListKey } from "interfaces";
+import Image from "next/image";
+import styles from "./styles.module.scss";
 
-interface PlantCardProps {
-  image: string;
-  key: number;
-  name: string;
-  price: number;
+interface PlantCardProps extends Omit<Plant, "id" | "image_url">, IListKey {
+  image: Plant["image_url"];
 }
 
-export const PlantCard = ({
-  image,
-  name,
-  price,
-}: PlantCardProps): JSX.Element => (
-  <S.Card bgImage={image}>
-    <div>
-      <div>
-        <h3>{name}</h3>
-        <span>R$ {price.toFixed(2).replace(".", ",")}</span>
+const PlantCard = ({ price, image, name }: PlantCardProps): JSX.Element => {
+  const formattedPrice = `R$ ${price.toFixed(2).replace(".", ",")}`;
+
+  return (
+    <div className={styles.card}>
+      <Image src={image} alt="" width={190} height={200} objectFit="cover" />
+      <div className={styles.container}>
+        <div className={styles.title_container}>
+          <h3 className={styles.title}>{name}</h3>
+          <span className={styles.price}>{formattedPrice}</span>
+        </div>
+        <button type="button" className={styles.button}>
+          Comprar
+        </button>
       </div>
-      <button type="button">
-        Comprar
-        <img src={arrow_right} alt="Arrow right icon" />
-      </button>
     </div>
-  </S.Card>
-);
+  );
+};
+
+export default PlantCard;
