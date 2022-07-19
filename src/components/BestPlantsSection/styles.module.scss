@@ -44,14 +44,22 @@
 }
 
 .input {
+  @include accessibility(get-color(primary, normal));
+
   color: get-color(neutral, normal);
   font-size: 1rem;
   padding: 1.875rem;
   padding-left: 0;
   width: 100%;
+
+  &:hover {
+    color: get-color(neutral, normal);
+  }
 }
 
 .button {
+  @include accessibility(get-color(neutral, normal));
+
   background-color: get-color(primary, normal);
   color: get-color(neutral, lighter);
   cursor: pointer;
