@@ -1,8 +1,7 @@
+import { NavLink } from "components";
 import navLinks from "content/nav_links";
 import { useToggle } from "hooks";
-import Link from "next/link";
-import { CgClose } from "react-icons/cg";
-import { HiMenu } from "react-icons/hi";
+import { CgClose, HiMenu } from "libs/react-icons";
 import styles from "./styles.module.scss";
 
 const MobileNavbar = (): JSX.Element => {
@@ -19,12 +18,8 @@ const MobileNavbar = (): JSX.Element => {
       </button>
       {menuIsOpen && (
         <ul className={styles.list}>
-          {navLinks.map((link) => (
-            <li className={styles.item}>
-              <Link href={link.path}>
-                <a className={styles.link}>{link.title}</a>
-              </Link>
-            </li>
+          {navLinks.map(({ id, title, path }) => (
+            <NavLink id={id} title={title} path={path} key={id} />
           ))}
         </ul>
       )}

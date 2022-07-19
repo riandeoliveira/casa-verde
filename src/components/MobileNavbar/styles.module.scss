@@ -1,55 +1,21 @@
-@use "../../styles/animations.scss" as *;
-@use "../../styles/media-queries.scss" as *;
-@use "../../styles/theme.scss" as *;
-@use "../../styles/utils.scss" as *;
+@use "../../styles" as *;
 
 .menu_icon {
+  @include accessibility(get-color(neutral, normal));
+
   background-color: transparent;
-  border-radius: 0.25rem;
-  color: $secondary-darker-color;
+  color: get-color(neutral, dark);
   cursor: pointer;
   display: none;
-  transition: box-shadow 0.15s, color 0.15s;
-
-  &:focus-visible {
-    box-shadow: 0 0 0 0.25rem $secondary-dark-color;
-  }
-
-  &:hover {
-    color: $secondary-dark-color;
-  }
 }
 
 .list {
-  background-color: $secondary-light-color;
+  background-color: get-color(neutral, lighter);
   border-radius: 0.25rem;
   display: none;
 }
 
-.item {
-  display: flex;
-}
-
-.link {
-  border-radius: 0.25rem;
-  color: $secondary-darker-color;
-  font-weight: 600;
-  padding: 1rem;
-  transition: box-shadow 0.15s, color 0.15s;
-  width: 100%;
-
-  &:focus-visible {
-    background-color: $secondary-color;
-    box-shadow: 0 0 0 0.25rem $secondary-dark-color;
-  }
-
-  &:hover {
-    background-color: $secondary-color;
-    color: $primary-color;
-  }
-}
-
-@include media-query($laptop) {
+@include laptop {
   .menu_icon {
     display: flex;
   }
