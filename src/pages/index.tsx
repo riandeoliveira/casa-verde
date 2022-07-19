@@ -5,7 +5,7 @@ import {
   Header,
   Main,
   MyPlantSection,
-  OffersSection,
+  OurPlantsSection,
 } from "components";
 import prisma from "libs/prisma";
 import type { GetStaticProps, NextPage } from "next";
@@ -22,7 +22,7 @@ const Home: NextPage<HomeProps> = ({ plants }): JSX.Element => {
       <Main>
         <BestPlantsSection />
         <MyPlantSection />
-        <OffersSection plantsData={plants} />
+        <OurPlantsSection plantsData={plants} />
       </Main>
     </>
   );

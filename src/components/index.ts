@@ -6,7 +6,7 @@ import Main from "./Main";
 import MobileNavbar from "./MobileNavbar";
 import MyPlantSection from "./MyPlantSection";
 import NavLink from "./NavLink";
-import OffersSection from "./OffersSection";
+import OurPlantsSection from "./OurPlantsSection";
 import PlantCard from "./PlantCard";
 
 export {
@@ -18,6 +18,6 @@ export {
   MobileNavbar,
   MyPlantSection,
   NavLink,
-  OffersSection,
+  OurPlantsSection,
   PlantCard,
 };
