@@ -16,7 +16,9 @@
 
 body {
   background-color: get-color(neutral, light);
-  background-image: url("../../../public/assets/icons/bg_top.svg");
+  background-image: url("../../../public/assets/images/background.png"),
+    url("../../../public/assets/icons/bg_top.svg");
   background-position: top right;
   background-repeat: no-repeat;
+  background-size: cover, auto;
 }
