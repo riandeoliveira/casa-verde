@@ -1,11 +1,10 @@
 {
-  "name": "7-days-of-code",
-  "description": "<YOUR_PROJECT_DESCRIPTION>",
+  "name": "casa-verde",
+  "description": "",
   "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "private": true,
-  "homepage": "<YOUR_PROJECT_URL>",
   "main": "src/pages/_app.tsx",
   "author": {
     "name": "Rian Oliveira",
@@ -50,15 +49,5 @@
     "sass": "^1.53.0",
     "stylelint": "^14.9.1",
     "typescript": "^4.6.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/riandeoliveira/7-days-of-code.git"
-  },
-  "keywords": [],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
